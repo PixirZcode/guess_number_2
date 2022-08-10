@@ -30,7 +30,7 @@ void main(){
         var guess = int.tryParse(input!);
 
         if (guess == null) {
-          stdout.write('│ Please Enter Number Only');
+          print('│ Please Enter Number Only');
           continue;
         }
         result = game.doGuess(guess);
@@ -47,7 +47,7 @@ void main(){
         var guess = int.tryParse(input!);
 
         if (guess == null) {
-          stdout.write('│ Please Enter Number Only');
+          print('│ Please Enter Number Only');
           continue;
         }
         result = game.doGuess(guess);
@@ -73,7 +73,7 @@ void main(){
           flag = true;
         }
       }while (!flag); // ถ้ายัง false ก็จะให้วนถามไปจนกว่าจะพิมพ์ y/Y/n/N ถูก
-      }
+    }
 
   } while(result != 1); // จะจบลูปใหญ่ก็ต่อเมื่อ result = 1
 
